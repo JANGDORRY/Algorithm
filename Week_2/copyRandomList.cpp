@@ -27,30 +27,33 @@ public:
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
-        vector<Node*> v; 
-        Node* c = head;
         
-        while(c== NULL) {
-            v.push_back(c);
-            c= c->next;
+        Node* ans;
+        Node* it1 = head;
+        Node* it2;
+        
+        Node *copy;
+        copy= new Node(head->val);
+        it2 = copy;
+        ans = it2;
+        
+        while(it1->next!= NULL) {
+            copy = new Node(it1->next->val);
+            it2->next=copy;
+            it1 = it1->next;
+            it2 = it2->next;
         }
 
-        c = head;
-        while(c== NULL) {
-            c->random = v.at(c->val);
-            c= c->next;
-        }
 
         return head;        
     }
 };
 
-int main()
-{
+int main(){
     
     Solution a;
 
-    cout << a.opyRandomList(() << endl;
+    //cout << a.copyRandomList() << endl;
 
     
 

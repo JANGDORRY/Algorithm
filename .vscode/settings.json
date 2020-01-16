@@ -7,6 +7,8 @@
         "map": "cpp",
         "algorithm": "cpp",
         "string": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "ostream": "cpp",
+        "__split_buffer": "cpp"
     }
 }
