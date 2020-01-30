@@ -126,7 +126,7 @@ public:
         //cout << endl <<"b= " << b << endl;
         return b;
     }
-};
+};s
 
 
 int main()
